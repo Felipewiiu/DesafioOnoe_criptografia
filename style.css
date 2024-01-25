@@ -1,11 +1,18 @@
 @import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 :root {
     --background: #F3F5FC;
     --White: #FFF;
+    --Dark-blue-dark-blue-300: #0A3871;
+    --Light-blue-light-blue-200: #EFF1FA;
+    --Dark-blue-dark-blue-400: #072B61;
 }
 
 body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
     margin: 0px;
 }
 
@@ -15,26 +22,36 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    max-width: 1500px;
     background-color: var(--background);
 
 }
 
 .img {
-    position: absolute;
-    top: 2.5rem;
+    position: relative;
+    top: 0rem;
+    left: -200px;
     width: 7.5rem;
     height: 3rem;
 }
 
 .container__section {
     display: flex;
-    align-items: end;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     width: 42.5rem;
     height: 40rem;
     /* background-color: red; */
     margin-left: 20rem;
+}
+
+.container__section--secundary{
+    display: flex;
+    align-items: end;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: aquamarine; */
 }
 
 .container__section--input {
@@ -46,7 +63,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 3rem */
+    border: none;
+    background-color:var(--background);
 
 }
 
@@ -54,7 +72,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 5rem;
+   
     /* background-color: aquamarine; */
 }
 
@@ -63,11 +81,19 @@ body {
     width: 20.5rem;
     padding: 1.5rem;
     align-items: flex-start;
-    gap: 0.5rem;
-    flex-shrink: 0;
+    height: 2rem;
     border-radius: 1.5rem;
     background: var(--Dark-blue-dark-blue-300, #0A3871);
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
     cursor: pointer;
+    transition: all 600ms;
+}
+
+#encryptBtn:hover{
+    background-color: var(--Dark-blue-dark-blue-400);
+}
+#encryptBtn:active{
+    transform: scale(1.1);
 }
 
 #encryptBtn p {
@@ -91,14 +117,22 @@ body {
     align-items: center;
     display: flex;
     width: 20.5rem;
+    height: 2rem;
     padding: 1.5rem;
     align-items: flex-start;
-    gap: 0.5rem;
-    flex-shrink: 0;
     border-radius: 1.5rem;
     border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
     background: #D8DFE8;
     cursor: pointer;
+    transition: all 600ms;
+}
+
+#decryptBtn:hover{
+    background-color: var(--Light-blue-light-blue-200);
+}
+
+#decryptBtn:active{
+    transform: scale(1.1);
 }
 
 #decryptBtn p {
@@ -117,7 +151,7 @@ body {
 }
 
 .container__aside {
-    width: 25rem;
+    width: 23rem;
     height: 40rem;
     flex-shrink: 0;
     border-radius: 2rem;
