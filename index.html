@@ -13,28 +13,39 @@
     <div class="container">
         <section class="container__section">
             <img src="./img/logoAlura.png" alt="Logo da alura" class="img">
-           <div class="container__section--secundary">
-            <div>
-                <input type="text" name="" id="" class="container__section--input" placeholder="Digite o seu texto">
-            </div>
-           <div >
-            <p class="text__tip"><img src="./img/Vector.png" alt="Símbolo dealerta">Apenas letras minúsculas e sem acento.</p>
-            <div class="container__section--btns">
-                <button id="encryptBtn"><p>Cripitografar</p></button>
-                <button id="decryptBtn"><p>Descripitografa</p></button>
+            <div class="container__section--secundary">
+                <div>
+                    <input type="text" name="" id="" class="container__section--input" placeholder="Digite o seu texto">
+                </div>
+                <div>
+                    <p class="text__tip"><img src="./img/Vector.png" alt="Símbolo dealerta">Apenas letras minúsculas e
+                        sem acento.</p>
+                    <div class="container__section--btns">
+                        <button id="encryptBtn">
+                            <p>Cripitografar</p>
+                        </button>
+                        <button id="decryptBtn">
+                            <p>Descripitografa</p>
+                        </button>
 
+                    </div>
+                </div>
             </div>
-           </div>
-           </div>
         </section>
         <aside class="container__aside">
-            <img src="./img/High quality products 1 1.png" alt="Desenho de uma mulher">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea name="text-area"  cols="35" rows="10" class="box-text"></textarea>
+            <button class="copy-btn disable-content">
+                <p>Copiar</p>
+            </button>
+            <div class="container_aside--img">
+                <img src="./img/High quality products 1 1.png" alt="Desenho de uma mulher" class="img-girl">
+                <h2 class="text-empity">Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
 
         </aside>
     </div>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
