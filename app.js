@@ -1,10 +1,29 @@
+import cryptography from "./cryptography.js";
+import copy from "./functionCopy.js";
 const textImput = document.querySelector(".container__section--input");
 const encryptBtn = document.querySelector("#encryptBtn");
 const decryptBtn = document.querySelector("#decryptBtn");
 const containerGroup = document.querySelector(".container_aside--img");
 const boxText = document.querySelector(".box-text");
 const copyBtn = document.querySelector(".copy-btn")
+const label = document.querySelector("#label")
 textImput.value = '';
+
+const objectCripity = {
+    'a': 'ai',
+    'e': 'enter',
+    'i': 'imes',
+    'o': 'ober',
+    'u': 'ufat'
+  };
+
+const objectDeCripity = {
+    'ai': 'a',
+    'enter': 'e',
+    'imes': 'i',
+    'ober': 'o',
+    'ufat': 'u'
+  };
 
 //Logica de habilitar e desabilitar a imagem lateral
 textImput.addEventListener("input", () => {
@@ -23,33 +42,29 @@ textImput.addEventListener("input", () => {
 });
 
 
-
 encryptBtn.addEventListener("click", () => {
-    let text = textImput.value
-
-    const objectVowel = {
-        'a': 'ai',
-        'e': 'enter',
-        'i': 'imes',
-        'o': 'ober',
-        'u': 'ufat'
-      };
-      
-      // Aqui transformo o objeto em um array de string e depois aglutino com(|),expressão regular "OU", passando
-      // a flag "ig", que serve para verificar a string por inteiro e ignorando o case dos caracteres
-      const regex = new RegExp(Object.keys(objectVowel).join('|'), 'ig'); //  retorno --> a|e|i|o|u
-      
-      // aqui crio um novo texto que pega o valor do imput e usa a regex para identificar o padrão procurado passando 
-      // uma calback que é executada a cada match da regex trocando a vogal pelo valor de um dos atributos do  objectVowel
-      let newText = text.replace(regex, (c) => objectVowel[c.toLowerCase()]);
-      boxText.value = newText
+   cryptography(textImput, objectCripity, boxText)
 })
 
 
 
 decryptBtn.addEventListener("click", () => {
-    console.log(textImput.value)
+    cryptography(textImput, objectDeCripity, boxText)
 })
+
+function desableLable(){
+    label.classList.add("label-disable")
+}
+
+copyBtn.addEventListener("click",() =>{
+    copy(boxText)
+    label.classList.remove("label-disable")
+    label.classList.add("label-enable")
+    setTimeout(desableLable, 2000)
+    
+    
+})
+
 
 
 
