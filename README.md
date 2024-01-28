@@ -1,4 +1,4 @@
-# Desafio de Criptografia feito pela Oracle next education :dart:
+# Desafio proposto pela Oracle next education :dart:
 
 <img src="./cript.jpg" alt="Imagem da página" >
 
@@ -8,11 +8,11 @@ O desafio é criar basicamente uma aplicação que criptografa textos, com o int
 
 **As "chaves" de criptografia que utilizaremos são:**
 
-``A letra "e" é convertida para "enter"``
-``A letra "i" é convertida para "imes"``
-``A letra "a" é convertida para "ai"``
-``A letra "o" é convertida para "ober"``
-``A letra "u" é convertida para "ufat"``
++ ``A letra "e" é convertida para "enter"``
++ ``A letra "i" é convertida para "imes"``
++ ``A letra "a" é convertida para "ai"``
++ ``A letra "o" é convertida para "ober"``
++ ``A letra "u" é convertida para "ufat"``
 
 **Requisitos:**
 - Deve funcionar apenas com letras minúsculas
@@ -21,8 +21,8 @@ O desafio é criar basicamente uma aplicação que criptografa textos, com o int
 
 **Por exemplo:**
 
-``"gato" => "gaitober"``
-``gaitober" => "gato"``
++ ``"gato" => "gaitober"``
++ ``gaitober" => "gato"``
 
 A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções
 O resultado deve ser exibido na tela.
