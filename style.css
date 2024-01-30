@@ -274,7 +274,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 15rem;
     background-color: #072B61;
 
