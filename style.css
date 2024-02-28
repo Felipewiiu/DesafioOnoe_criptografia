@@ -18,6 +18,7 @@ body {
     margin: 0px;
     box-sizing: border-box;
     
+    
 }
 
 .container {
@@ -25,16 +26,13 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
-    /* background-color: rgb(36, 38, 180); */
+    background-color: rgb(36, 38, 180);
     padding-block: 32px;
     gap: 32px;
-    /* background-color: var(--background); */
 
 }
 
 .img {
-    
-    /* background-color: #0a711b; */
     width: 7.5rem;
     height: 3rem;
 }
@@ -45,7 +43,6 @@ body {
     justify-content: space-between;
     width: 42.5rem;
     height: 85%;
-    /* background-color: aqua; */
     max-height: 819.891px;
 }
 
@@ -276,7 +273,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 1500px;
     height: 15rem;
     background-color: #072B61;
     width: 100vw;
