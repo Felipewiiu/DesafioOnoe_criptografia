@@ -16,7 +16,9 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
     
     
 }
@@ -26,7 +28,8 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
-    background-color: rgb(36, 38, 180);
+    height: 100vh;
+    /* background-color: rgb(36, 38, 180); */
     padding-block: 32px;
     gap: 32px;
 
