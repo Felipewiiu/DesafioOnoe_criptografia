@@ -29,8 +29,7 @@ body {
     align-items: center;
     max-width: 1500px;
     height: 100vh;
-    /* background-color: rgb(36, 38, 180); */
-    padding-block: 32px;
+    padding-block: px;
     gap: 32px;
 
 }
