@@ -20,7 +20,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     
-    
 }
 
 .container {
@@ -31,7 +30,6 @@ body {
     height: 100vh;
     padding-block: px;
     gap: 32px;
-
 }
 
 .img {
@@ -175,15 +173,15 @@ body {
     max-height: 819.891px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 384px;
     height: 90vh;
-    flex-shrink: 0;
+    padding-block: 32px;
     border-radius: 2rem;
     background: var(--White, #FFF);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    /* margin-inline: 2.5rem; */
+
 }
 
 .label-enable {
