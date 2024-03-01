@@ -24,15 +24,20 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
     height: 100vh;
     padding-block: px;
     gap: 32px;
+
 }
 
 .img {
+    display: inline-block;
+    right: 100px;
+    position: relative;
     width: 7.5rem;
     height: 3rem;
 }
@@ -246,7 +251,6 @@ body {
 }
 
 .copy-btn {
-    margin-top: 19rem;
     width: 17.5rem;
     height: 3.5rem;
     border-radius: 1.5rem;
@@ -296,3 +300,5 @@ body {
     width: 10rem;
     
 }
+
+
