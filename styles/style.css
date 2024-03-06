@@ -19,7 +19,8 @@ body {
     padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+    width: 100vw;
+
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
-    /* height: 100vh; */
+    flex-wrap: wrap;
     margin-top: 32px;
     gap: 32px;
 
@@ -95,7 +96,7 @@ body {
 .container__section--btns {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #encryptBtn {
@@ -179,7 +180,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 384px;
+    width: 350px;
     height: 90vh;
     padding-block: 32px;
     border-radius: 2rem;
@@ -271,7 +272,7 @@ body {
     padding: 0px;
 }
 
-.container__footer{
+.container__footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +283,7 @@ body {
     margin-top: 64px;
 }
 
-.container__footer h2{
+.container__footer h2 {
     padding-block: 2rem;
     color: var(--White);
     text-align: center;
@@ -291,22 +292,77 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    
+
 }
 
-.container__footer--img{
+.container__footer--img {
     display: flex;
     justify-content: space-evenly;
     width: 10rem;
-    
+
 }
 
-@media screen and (max-width: 767px){
-    .container{
-        /* background-color: red; */
+@media screen and (max-width: 767px) {
+    .container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .container__section {
+        width: auto;
+    }
+
+    .container__section_texArea {
+        width: 200px;
+        min-width: 350px;
+    }
+
+    .container__section--input {
+        width: 200px;
+        min-width: 350px;
+        padding: 0px;
+    }
+
+    .img {
+        position: static;
+        right: 0px;
+    }
+
+    .container__section {
+        width: auto;
+    }
+
+    .text__tip {
+        width: 20.5rem;
+        justify-content: flex-start;
+    }
+
+    .container_section_text_tip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container__section--btns {
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__aside h2 {
+        margin: 0px;
+    }
+
+    .container__aside {
+        justify-content: center;
+        flex-shrink: 1;
+        height: 19rem;
+        padding: 0px;
+    }
+
+    .img-girl {
+        display: none;
     }
 
 }
-
-
