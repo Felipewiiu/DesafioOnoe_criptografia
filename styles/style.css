@@ -28,7 +28,6 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
-    flex-wrap: wrap;
     margin-top: 32px;
     gap: 32px;
 
@@ -104,7 +103,7 @@ body {
     width: 20.5rem;
     padding: 1.5rem;
     align-items: flex-start;
-    height: 2rem;
+    height: 3.9rem;
     border-radius: 1.5rem;
     background: var(--Dark-blue-dark-blue-300, #0A3871);
     border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
@@ -141,7 +140,7 @@ body {
     align-items: center;
     display: flex;
     width: 20.5rem;
-    height: 2rem;
+    height: 3.9rem;
     padding: 1.5rem;
     align-items: flex-start;
     border-radius: 1.5rem;
@@ -252,7 +251,7 @@ body {
 
 .copy-btn {
     width: 17.5rem;
-    height: 3.5rem;
+    height: 3.9rem;
     border-radius: 1.5rem;
     border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
     background: #D8DFE8;
@@ -364,5 +363,34 @@ body {
     .img-girl {
         display: none;
     }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__aside {
+        justify-content: center;
+        flex-shrink: 1;
+        width: 100%;
+        padding: 0px;
+        height: 19rem;
+    }
+
+    .img-girl {
+        display: none;
+    }
+
+    .copy-btn {
+        width: 90%;
+    }
+
+    .box-styles {
+        width: 90%;
+    }
+
 
 }
